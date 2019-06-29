@@ -63,7 +63,7 @@ class App extends Component {
     return (
       <div>
         <nav className="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-          <a className="navbar-brand col-sm-3 col-md-2 mr-0" href="#" target="_blank">Buy Movie Tickets with Etheruem & Metamask</a>
+          <a className="navbar-brand col-sm-3 col-md-2 mr-0" href="#" target="_blank">Buy Movie Tickets with Ethereum & Metamask</a>
           <ul className="navbar-nav px-3">
             <li className="nav-item text-nowrap d-none d-sm-none d-sm-block">
               <small><a className="nav-link" href="#"><span id="account"></span></a></small>
@@ -110,7 +110,7 @@ class App extends Component {
               <h3>Ticket Window 1</h3>
               { this.state.loading
               ? <div id="loader" className="text-center"><p className="text-center">Loading...</p></div>
-              : <TicketList tasks={this.state.tasks} createTask={this.createTask} />
+              : (this.state.taskCount < 5 ? <TicketList tasks={this.state.tasks} createTask={this.createTask} /> : <p>Show is full</p>)
               }
               { this.state.taskCount > 0 ? <p>Collect Water and Popcorn !</p> : null }
             </div>
@@ -118,21 +118,21 @@ class App extends Component {
               <h3>Ticket Window 2</h3>
               { this.state.loading
               ? <div id="loader" className="text-center"><p className="text-center">Loading...</p></div>
-              : <TicketList tasks={this.state.tasks} createTask={this.createTask} />
+              : (this.state.taskCount < 5 ? <TicketList tasks={this.state.tasks} createTask={this.createTask} /> : <p>Show is full</p>)
               }
             </div>
             <div className="col-md-3 justify-content-center">
               <h3>Ticket Window 3</h3>
               { this.state.loading
               ? <div id="loader" className="text-center"><p className="text-center">Loading...</p></div>
-              : <TicketList tasks={this.state.tasks} createTask={this.createTask} />
+              : (this.state.taskCount < 5 ? <TicketList tasks={this.state.tasks} createTask={this.createTask} /> : <p>Show is full</p>)
               }
             </div>
             <div className="col-md-3 justify-content-center">
               <h3>Ticket Window 4</h3>
               { this.state.loading
               ? <div id="loader" className="text-center"><p className="text-center">Loading...</p></div>
-              : <TicketList tasks={this.state.tasks} createTask={this.createTask} />
+              : (this.state.taskCount < 5 ? <TicketList tasks={this.state.tasks} createTask={this.createTask} /> : <p>Show is full</p>)
               }
             </div>
           </div>
