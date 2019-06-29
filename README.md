@@ -1,68 +1,28 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is Movie Ticketing Dapp built on Ethereum, Metamask, Ganache and React.
 
-## Available Scripts
+![1](https://user-images.githubusercontent.com/5019222/60381944-79ff3700-9a79-11e9-99e2-e2ceb652876f.png)
 
-In the project directory, you can run:
+For the application, ganache serves as a local in-memory blockchain which is connected via Metamask as you can see here :
 
-### `npm start`
+![Screenshot from 2019-06-29 14-26-08](https://user-images.githubusercontent.com/5019222/60381972-e9752680-9a79-11e9-9d37-b6ce3abebe83.png)
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Metamask:
+![3](https://user-images.githubusercontent.com/5019222/60381984-132e4d80-9a7a-11e9-99eb-c473de8eab5f.png)
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+We enter the movie and show in any Ticketing window:
+![4](https://user-images.githubusercontent.com/5019222/60382005-67d1c880-9a7a-11e9-8d2b-c16a94a9a5a0.png)
 
-### `npm test`
+Metamask confirmation will pop up to authorize the transaction:
+![5](https://user-images.githubusercontent.com/5019222/60382032-c5feab80-9a7a-11e9-8d05-9029ab31c434.png)
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Once we pay with Ether, ticket is registered on Blockchain & we can see the transaction hash:
+![6](https://user-images.githubusercontent.com/5019222/60382042-fb0afe00-9a7a-11e9-825f-7af9791b1f56.png)
 
-### `npm run build`
+We can verify the Transaction hasg has been recorded on the blockchain :
+![6 5](https://user-images.githubusercontent.com/5019222/60382057-360d3180-9a7b-11e9-84e9-bf9ca22f711d.png)
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Now the UI shows how many tickets have been booked by the user, the reduced balance of User's wallet, Water & Popcorn to be collected on Window 1 and the booked tickets:
+![7](https://user-images.githubusercontent.com/5019222/60382064-74a2ec00-9a7b-11e9-9733-a95bf9da1ddb.png)
+ 
+ If we have a limit of 5 seats per show, then booking is not allowed after booking 5 tickets:
+ ![8](https://user-images.githubusercontent.com/5019222/60382080-bf246880-9a7b-11e9-99d2-e4bef5cd471a.png)
