@@ -63,7 +63,7 @@ class App extends Component {
     return (
       <div>
         <nav className="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-          <a className="navbar-brand col-sm-3 col-md-2 mr-0" href="#" target="_blank">Buy Movie Tickets</a>
+          <a className="navbar-brand col-sm-3 col-md-2 mr-0" href="#" target="_blank">Buy Movie Tickets with Etheruem & Metamask</a>
           <ul className="navbar-nav px-3">
             <li className="nav-item text-nowrap d-none d-sm-none d-sm-block">
               <small><a className="nav-link" href="#"><span id="account"></span></a></small>
@@ -77,7 +77,7 @@ class App extends Component {
           {/* User Wallet Information */}
             <br />
             <br />
-            <h4>User Wallet: {this.state.account}</h4>
+            <h4>Your Metamask Wallet: {this.state.account}</h4>
             <h4>Wallet Balance: {this.state.balance} ETH</h4>
             <br />
             <h4>Shows Available:</h4>
