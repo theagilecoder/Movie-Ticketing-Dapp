@@ -8,7 +8,7 @@
     "react-bootstrap": "^1.0.0-beta.5",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
-    "web3": "^1.0.0-beta.46"
+    "web3": "^1.10.4"
   },
   "scripts": {
     "start": "react-scripts start",
